@@ -10,11 +10,3 @@ router.get('/emr', function(req, res, next) {
     res.render('emr', { title: 'emr' });
 });
 module.exports = router;
-**under views add a .jade file named emr.jade and paste
-extends layout
-
-block content
-p All EMRs:
-    script(type='text/javascript' src='../public/javascripts/emrdb.js').
-x = emr
-console.log(x)
